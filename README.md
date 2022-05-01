@@ -294,3 +294,35 @@ If any class implements Comparable interface in Java then collection of that obj
 12. What is iterator, list iterator and enumerator?
 13. What is the use of Copy on Write Arraylist?
 14. Calculate number of Duplicates in Array list?
+15. What is the meaning of ThreadLocal?
+```
+The ThreadLocal class is used to create thread local variables which can only be read and written by the same thread. For example, if two threads are accessing code having reference to same threadLocal variable then each thread will not see any modification to threadLocal variable done by other thread.
+
+```
+16. what is volatile keyword in java
+```
+The volatile field is needed to make sure that multiple threads always see the newest value, even when the cache system or compiler optimizations are at work. Reading from a volatile variable always returns the latest written value from this variable.
+
+```
+
+17. Spring boot setup global exception handler.
+```
+
+@ControllerAdvice
+public class CustomizedExceptionHandling extends ResponseEntityExceptionHandler {
+
+    @ExceptionHandler(TeacherNotFoundException.class)
+    public ResponseEntity<Object> handleExceptions( TeacherNotFoundException exception, WebRequest webRequest) {
+        ExceptionResponse response = new ExceptionResponse();
+        response.setDateTime(LocalDateTime.now());
+        response.setMessage("Not found");
+        ResponseEntity<Object> entity = new ResponseEntity<>(response,HttpStatus.NOT_FOUND);
+        return entity;
+    }
+}
+```
+18. What is volatile and transient keyword in Java?
+```
+The volatile keyword flushes the changes directly to the main memory instead of the CPU cache. On the other hand, the transient keyword is used during serialization.
+
+```
