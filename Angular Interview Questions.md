@@ -280,7 +280,7 @@
 |273| [What is the benefit of Automatic Inlining of Fonts?](#what-is-the-benefit-of-automatic-inlining-of-fonts)|
 |274| [What is content projection?](#what-is-content-projection)|
 |275| [What is ng-content and its purpose?](#what-is-ng-content-and-its-purpose)|
-|276| [](#)|
+|276| [How Angular components communicate? IMPOTANT](#How Angular components communicate?)|
 
 1. ### What is Angular Framework?
 
@@ -4561,3 +4561,10 @@
      Content projection is a pattern in which you insert, or project, the content you want to use inside another component.
 275. ### What is ng-content and its purpose?
      The ng-content is used to insert the content dynamically inside the component that helps to increase component reusability. 
+		   
+276. ###How Angular components communicate?
+		   
+3 ways to communicate data between Angular components
+1.Parent to Child: Sharing Data via Input
+2.Child to Parent: Sharing Data via ViewChild with AfterViewInit
+3.Child to Parent: Sharing Data via Output() and EventEmitter
