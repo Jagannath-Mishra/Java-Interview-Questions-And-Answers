@@ -331,3 +331,7 @@ The volatile keyword flushes the changes directly to the main memory instead of 
 the transient keyword is used during serialization.
 
 ```
+19. which are immutable class in java?
+```
+Immutable class means once the object of the class is created its fields cannot be modified or changed. In Java, all the wrapper classes like Boolean, Short, Integer, Long, Float, Double, Byte, Char, and String classes are immutable classes
+```
